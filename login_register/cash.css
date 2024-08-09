@@ -1,0 +1,117 @@
+/* cash.css */
+
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.online {
+    border-left: 8px solid #28a745;
+}
+
+.offline {
+    border-left: 8px solid #dc3545;
+}
+
+.heading, .headingof {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.heading {
+    color: #28a745;
+}
+
+.headingof {
+    color: #dc3545;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cod a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cod a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    .heading, .headingof {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cod a {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading, .headingof {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .cod a {
+        padding: 8px 18px;
+    }
+}

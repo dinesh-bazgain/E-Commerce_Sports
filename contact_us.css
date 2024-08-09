@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+
+.header {
+    padding: 1rem 0;
+    background: url(images/d.jpg);
+    margin: auto;
+    background-size: cover;
+}
+
+.head {
+    display: flex;
+}
+
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 30px 0 0 50px;
+}
+
+.logo img {
+    height: 70px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: linear-gradient(to left, rgba(171, 159, 147, 0.496), rgb(9, 9, 9));
+    border-radius: 30px;
+    border: none;
+    padding: 0.8rem 3rem;
+    text-transform: capitalize;
+    color: snow;
+    word-spacing: 0.2rem;
+    margin-bottom: 5px;
+    margin-right: 3rem;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.dropbtn i {
+    display: none;
+}
+
+.dropbtn:hover i {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.dropbtn:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5e5d5d;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 120px;
+    margin: 0% 10px;
+    border-radius: 30px;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.nav {
+    text-transform: uppercase;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    transform: translateX(-30%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    opacity: 70%;
+}
+
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav ul li {
+    cursor: pointer;
+    padding: .5rem 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: snow;
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+
+.nav ul li:hover {
+    border-radius: 60px;
+    background: linear-gradient(to left, black, rgb(246, 32, 8), black);
+}
+
+
+
+.content h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: snow;
+}
+
+
+.content p {
+    font-size: 16px;
+    color: snow;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.form {
+    width: 30%;
+    margin: 20px auto 30px;
+    border-radius: 30px;
+    background-color: rgb(88, 88, 88);
+    box-shadow: 0 0 8vh 0 rgba(139, 16, 2, 1);
+    padding: 2rem;
+    opacity: 0.8;
+}
+
+.form label {
+    display: block;
+    padding: 20px 0 5px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    color: snow;
+}
+
+.form input {
+    border: 2px solid black;
+    height: 25px;
+    width: 100%;
+    background: none;
+    /* color: rgb(246, 32, 8); */
+    border-radius: 50px;
+    margin-top: 1vh;
+    padding: 2vh;
+    font-size: 10px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    color: snow;
+}
+
+
+.form .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.form button {
+    width: 50%;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 3rem;
+    color: snow;
+    text-transform: capitalize;
+}
+
+.form input:hover {
+    border: 1px solid rgb(246, 32, 8);
+}
+
+.form input:focus {
+    border: 1px solid rgb(246, 32, 8);
+    outline: none;
+}
+
+.form button:hover {
+    border: 1px solid rgb(246, 32, 8);
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(246, 32, 8);
+}
+
+.form button:focus {
+    border: 1px solid rgb(246, 32, 8);
+    outline: none;
+    color: rgb(246, 32, 8);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+
+.footer {
+    background: linear-gradient(to left, black, rgb(246, 93, 76), black);
+    width: 100%;
+    /* bottom: 0; */
+    color: aliceblue;
+    border-top-left-radius: 40px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 100px 0 30px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.foot_logo {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email_id {
+    width: fit-content;
+    border-bottom: 1px solid snow;
+    margin: 20px 0;
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: snow;
+}
+
+.col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid snow;
+    margin-bottom: 50px;
+}
+
+.col form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.col form input {
+    width: 100%;
+    background: transparent;
+    color: snow;
+    border: 0;
+    outline: none;
+}
+
+.col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.col form .fa-solid {
+    font-size: 16px;
+    color: snow;
+}
+
+.social_icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background: snow;
+    margin-right: 15px;
+}
+
+.footer hr {
+    width: 98%;
+    border-bottom: 1 px solid snow;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: gray;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: snow;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .footer {
+        bottom: 0;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #292929;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.4s;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Display the burger menu */
+    .burger-menu {
+        display: block;
+        color: #f1f1f1;
+    }
+
+    /* Hide the regular nav menu */
+    .nav {
+        display: none;
+        left: 8rem;
+        top: 6rem;
+        background-color: rgb(32, 31, 31);
+        color: wheat;
+        width: 30vh;
+        opacity: 1;
+        border-radius: 20px;
+    }
+
+    .nav ul{
+        flex-direction: column;
+    }
+
+    .nav ul li{
+        padding: 20px auto;
+    }
+
+    .nav hr{
+        width: 90%;
+        border-bottom: 1px solid rgb(5, 5, 5);
+        margin: auto;
+    }
+
+    .header{
+        background-image: url(images/j.jpg);
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 10px 0 0 20px;
+    }
+
+    .dropdown{
+        position: absolute;
+        right: -2rem;
+        top: 1rem;
+    }
+
+    .content h3{
+        font-size: 20px;
+        color: rgb(55, 55, 45);
+    }
+
+    .content p{
+        font-size: 10px;
+        color: rgb(55, 55, 45);
+    }
+
+    .form{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+
+}

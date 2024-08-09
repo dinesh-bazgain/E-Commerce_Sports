@@ -1,0 +1,121 @@
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    padding: 20px;
+    position: relative;
+    background-color: rgba(22, 23, 23, 0.7);
+}
+
+.header{
+    position: absolute;
+    bottom: 135%;
+    /* background: black; */
+    width: 96%;
+    margin-right: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #454343;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.dropdown {
+    margin-left: auto;
+    top: -70px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c5c4c4;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+thead tr {
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #212020;
+}
+
+tbody tr:hover {
+    background-color: #626262;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        white-space: nowrap;
+        text-align: right;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

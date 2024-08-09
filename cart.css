@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(94, 91, 91);
+}
+
+
+.header {
+    padding: 1rem 0;
+    margin: auto;
+    background-size: cover;
+}
+
+.head {
+    display: flex;
+}
+
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 30px 0 0 50px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Dropdown button */
+.dropbtn {    
+    background: linear-gradient(to left, rgb(109, 110, 111), rgba(171, 159, 147, 0.496));
+    border-radius: 30px;
+    border: none;
+    padding: 0.8rem 3rem;
+    text-transform: capitalize;
+    color: snow;
+    word-spacing: 0.2rem;
+    margin-bottom: 5px;
+    margin-right: 3rem;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+
+.dropbtn i {
+    display: none;
+}
+
+
+.dropbtn:hover i {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+
+.dropbtn:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-content {
+    display: none;
+    margin: 0% 10px;
+    border-radius: 30px;    
+    position: absolute;
+    background-color: #5e5d5d;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 120px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #b0aeae;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    
+.nav {
+    text-transform: uppercase;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    transform: translateX(-30%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    opacity: 70%;
+}
+
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav ul li {
+    cursor: pointer;
+    padding: .5rem 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: snow;
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+
+.nav ul li:hover {
+    border-radius: 60px;
+    background: linear-gradient(to left, black, rgb(246, 32, 8), black);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 20px;
+
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: goldenrod;
+}
+
+/* Decrease the size of the image */
+.dbimg {
+    height: 150px;
+    width: 150px;
+
+    object-fit: contain;
+
+}
+
+/* Decrease the size of the quantity box */
+input[type="text"][name="quantity"] {
+    width: 50px;
+
+    padding: 5px;
+
+}
+
+/* Container styling */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+/* Button styling */
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+/* Message styling */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Total amount styling */
+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Link button styling */
+button a {
+    color: white;
+}
+
+
+
+.burger-menus {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.burger-menus div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    /* Display the burger menu */
+    .burger-menus {
+        display: block;
+    }
+
+    /* Hide the regular nav menu */
+    .nav {
+        display: none;
+        left: 7rem;
+        top: 5rem;
+        background-color: rgb(32, 31, 31);
+        color: wheat;
+        width: 30vh;
+        opacity: 1;
+        border-radius: 20px;
+    }
+
+    .nav ul{
+        flex-direction: column;
+    }
+
+    .nav ul li{
+        padding: 20px auto;
+    }
+
+    .nav hr{
+        width: 90%;
+        border-bottom: 1px solid rgb(5, 5, 5);
+        margin: auto;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 10px 0 0 20px;
+    }
+
+    .dropdown{
+        position: absolute;
+        right: -2rem;
+        top: 1rem;
+    }
+
+    .mobile_bar{
+        float: left;
+        margin: 10px;
+    }
+}
+
