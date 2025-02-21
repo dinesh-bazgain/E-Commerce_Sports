@@ -183,7 +183,7 @@ if (isset($_POST['login'])) {
 
             <hr>
 
-            <p class="copyright">Developed by <b>Dinesh Bajgain </b>& <b>Sadishan Khadka</b>.</p>
+            <p class="copyright">Developed by <b>Dinesh Bajgain</b>.</p>
 
         </div>
 

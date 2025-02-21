@@ -1,4 +1,3 @@
-
 * {
     margin: 0%;
     padding: 0%;
@@ -10,6 +9,7 @@ body {
     text-align: center;
     font-family: arial;
     height: 100vh;
+    color: white; /* Default text color */
 }
 
 .logo {
@@ -18,10 +18,11 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .content {
-    background-color: rgba(97, 89, 89, 0.8);
+    background-color: rgba(40, 40, 40, 0.8); /* Dark gray background */
     border-radius: 20px;
     border-width: 1px;
     width: 55vh;
@@ -31,15 +32,15 @@ a {
     transform: translate(-50%, -50%);
     padding: 2vh;
     margin: 3% 0;
-    box-shadow: 0 0 8vh 0 rgba(139, 16, 2, 1);
+    box-shadow: 0 0 15vh 0 rgb(0, 0, 0);
 }
 
 .name_head {
-    color: rgb(243, 33, 33);
+    color: snow; /* Red color for headings */
 }
 
 .name_tail {
-    color: rgb(1, 1, 255);
+    color: rgb(255, 255, 255); /* White color for tails */
 }
 
 h2 {
@@ -55,8 +56,8 @@ input {
     margin-top: 1vh;
     height: 40px;
     border: solid rgb(6, 6, 6);
-    background-color: rgb(97, 89, 89);
-    color: aliceblue;
+    background-color: rgb(40, 40, 40); /* Dark gray for inputs */
+    color: white;
     border-radius: 5px;
     border-width: 1px;
     padding: 5px;
@@ -83,7 +84,7 @@ input {
 }
 
 button {
-    background: red;
+    background: rgb(60, 60, 60); /* Dark gray background */
     border-color: rgb(7, 7, 7);
     padding: 1.7vh;
     margin-top: 2vh;
@@ -93,26 +94,23 @@ button {
     border-style: solid;
     font-weight: bold;
     font-size: 18px;
-    color: red;
+    color: white; /* White text color */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: red;
+    background-color: snow; /* Red on hover */
     color: white;
 }
 
 button a:hover {
-    color: red;
+    color: rgb(71, 71, 71);
     text-decoration: none;
 }
 
-
-
 .sign_up button:focus {
     outline: none;
-
 }
 
 .account {
@@ -121,12 +119,11 @@ button a:hover {
 
 .account a {
     text-decoration: none;
-    color: snow;
+    color: white; /* White text color */
 }
 
 .account a:hover {
-    color: black;
-
+    color: gray; 
 }
 
 .dropdown-content {
@@ -145,7 +142,7 @@ button a:hover {
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: black; /* Black text color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -153,15 +150,14 @@ button a:hover {
 
 /* Change the background color of links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #e0e0e0; /* Light gray on hover */
 }
 
-
 input:hover {
-    border: 1px solid rgb(243, 33, 33);
+    border: 1px solid snow; /* Red border on hover */
 }
 
 input:focus {
-    border: 1px solid rgb(243, 33, 33);
+    border: 1px solid snow; /* Red border on focus */
     outline: none;
 }

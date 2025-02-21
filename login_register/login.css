@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: black;
 }
 
 .container {
@@ -15,13 +15,14 @@ body {
     background-size: cover;
     height: 120vh;
     opacity: 0.7;
-    color: silver;
+    color: white;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 20px;
     min-width: 120px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -42,13 +43,12 @@ body {
 
 /* Change the background color of links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
 }
 
 .head {
     display: flex;
 }
-
 
 .top {
     display: flex;
@@ -65,10 +65,8 @@ body {
     height: 70px;
 }
 
-
-
 .profile {
-    background: linear-gradient(to left, rgb(246, 32, 8), rgb(32, 32, 31));
+    background: linear-gradient(to left, gray, black);
     border-radius: 30px;
     padding: 0.8rem 1.4rem;
     text-transform: capitalize;
@@ -83,17 +81,15 @@ body {
     display: none;
 }
 
-
 .profile:hover i {
     display: inline-block;
     padding-right: 5px;
+    border-radius: 20px;
 }
-
 
 .profile:hover {
     transform: scale(1.1);
 }
-
 
 .nav {
     text-transform: uppercase;
@@ -107,12 +103,10 @@ body {
     opacity: 70%;
 }
 
-
 .nav ul {
     display: flex;
     list-style: none;
 }
-
 
 .nav ul li {
     cursor: pointer;
@@ -123,20 +117,18 @@ body {
 
 .nav ul a {
     text-decoration: none;
-    color: snow;
+    color: white;
 }
-
 
 .nav ul li:hover {
     border-radius: 60px;
-    background: linear-gradient(to left, rgb(32, 32, 31), rgb(246, 32, 8), rgb(32, 32, 31));
+    background: linear-gradient(to left, rgb(32, 32, 31), rgb(169, 169, 169), rgb(32, 32, 31));
 }
-
 
 .quote {
     width: 75%;
     margin-top: 5rem;
-    margin-left: 9rem;
+    margin-left: 10rem;
 }
 
 .quote p {
@@ -144,7 +136,7 @@ body {
 }
 
 .login_box {
-    height: 350px;
+    /* height: 350px; */
     width: 400px;
     background-color: rgb(88, 88, 88);
     margin-top: 3rem;
@@ -153,7 +145,7 @@ body {
     border-radius: 30px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 0 8vh 0 rgba(139, 16, 2, 1);
+    box-shadow: 0 0 8vh 0 rgb(70, 69, 69);
 }
 
 .login_box {
@@ -165,22 +157,28 @@ body {
     margin-top: 1vh;
     padding: 2vh;
     font-size: 10px;
-    width: 45vh;
-    height: 4vh;
+    width: 90%;
+    height: 5%;
     border-width: 1px;
-    border-color: rgb(0, 0, 0);
+    border-color: black;
     background-color: rgb(88, 88, 88);
     border-style: solid;
     font-size: 15px;
 }
 
+.login_box hr{
+    height: 2px;
+    background-color: #000000;
+    border: none;
+}
+
 ::placeholder {
-    color: snow;
+    color: white;
 }
 
 .login {
     background-color: rgb(88, 88, 88);
-    border-color: rgb(7, 7, 7);
+    border-color: black;
     padding: 1.7vh;
     margin-top: 2vh;
     width: 25vh;
@@ -189,7 +187,7 @@ body {
     border-style: solid;
     font-weight: bold;
     font-size: 15px;
-    color: whitesmoke;
+    color: white;
 }
 
 .login_box p {
@@ -199,7 +197,7 @@ body {
 
 .login_box p a {
     text-decoration: none;
-    color: snow;
+    color: white;
 }
 
 .creat {
@@ -208,13 +206,14 @@ body {
     border-radius: 50px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(7, 7, 7);
+    border-color: black;
     height: 7vh;
     font-weight: bold;
     font-size: 15px;
-    color: whitesmoke;
-
+    color: white;
 }
+
+
 
 .login_box p a:hover {
     color: rgb(0, 0, 0);
@@ -225,24 +224,25 @@ button {
 }
 
 .login_box input:hover {
-    border: 1px solid rgb(243, 33, 33);
+    border: 1px solid gray;
 }
 
 .login_box input:focus {
-    border: 3px solid rgb(124, 3, 3);
+    border: 3px solid gray;
     outline: none;
 }
 
 .creat:hover,
 .login:hover {
-    border: 1px solid rgb(243, 33, 33);
+    border: 1px solid gray;
     font-size: 15px;
     font-weight: 900;
 }
 
 .guest {
     padding: 0.1rem 1rem;
-    background-color: rgb(88, 88, 88);
+    background: transparent;
+    color: snow;
     border-style: none;
     font-size: 15px;
     margin-top: 20px;
@@ -263,138 +263,64 @@ button {
 }
 
 .footer {
-    background: linear-gradient(to left, rgb(32, 32, 31), rgb(246, 93, 76), rgb(32, 32, 31));
-    width: 100%;
-    /* bottom: 0; */
-    color: aliceblue;
+    background: linear-gradient(to left, #010101, #333333, #555555);
+    color: white;
     border-top-left-radius: 40px;
+    padding: 60px 20px 30px;
     font-size: 13px;
-    line-height: 20px;
-    padding: 100px 0 30px;
+    line-height: 1.6;
+    position: relative;
 }
 
 .row {
-    width: 85%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .col {
-    flex-basis: 25%;
+    flex: 1 1 200px;
     padding: 10px;
 }
 
 .col:nth-child(2),
-.col:nth-child(2),
 .col:nth-child(3) {
-    flex-basis: 15%;
+    flex: 1 1 150px;
 }
 
 .foot_logo {
-    width: 200px;
-    margin-bottom: 30px;
+    width: 180px;
+    margin-bottom: 20px;
 }
 
 .col h3 {
-    width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
-}
-
-.email_id {
-    width: fit-content;
-    border-bottom: 1px solid snow;
-    margin: 20px 0;
-}
-
-.col ul li {
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-.col ul li a {
-    text-decoration: none;
-    color: snow;
-}
-
-.col form {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid snow;
-    margin-bottom: 50px;
-}
-
-.col form .fa-regular {
     font-size: 18px;
-    margin-right: 10px;
-}
-
-.col form input {
-    width: 100%;
-    background: transparent;
-    color: snow;
-    border: 0;
-    outline: none;
-}
-
-.col form button {
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-.col form .fa-solid {
-    font-size: 16px;
-    color: snow;
-}
-
-.social_icons .fa-brands {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: black;
-    background: snow;
-    margin-right: 15px;
-}
-
-.footer hr {
-    width: 98%;
-    border-bottom: 1 px solid snow;
-    margin: 20px auto;
-}
-
-.copyright {
-    text-align: center;
+    color: #eaf2f8;
+    text-transform: uppercase;
 }
 
 .underline {
-    width: 100%;
-    height: 5px;
-    background: gray;
+    height: 4px;
+    background: #34495e;
     border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0;
+    width: 80px;
+    margin-top: 5px;
     overflow: hidden;
+    position: relative;
 }
 
 .underline span {
-    width: 15px;
+    display: block;
     height: 100%;
-    background: snow;
+    width: 15px;
+    background: #f39c12;
     border-radius: 3px;
     position: absolute;
-    top: 0;
-    left: 10px;
     animation: moving 2s linear infinite;
 }
 
@@ -406,6 +332,99 @@ button {
     100% {
         left: 100%;
     }
+}
+
+.email_id {
+    border-bottom: 1px solid #eaf2f8;
+    margin: 15px 0;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.col ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.col ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #dcdde1;
+    transition: color 0.3s ease;
+}
+
+.col ul li:hover {
+    color: #f39c12;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.col form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #eaf2f8;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.col form input {
+    flex: 1;
+    background: transparent;
+    color: #eaf2f8;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.col form button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #f39c12;
+    font-size: 16px;
+}
+
+.social_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social_icons .fa-brands {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dcdde1;
+    color: #010101;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social_icons .fa-brands:hover {
+    background: #f39c12;
+    color: #fff;
+}
+.footer hr {
+    width: 98%;
+    border: none;
+    border-bottom: 1px solid #eaf2f8;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #dcdde1;
 }
 
 @media (max-width: 800px) {

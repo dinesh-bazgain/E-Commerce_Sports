@@ -25,7 +25,7 @@ session_start();
         <div class="header">
 
             <video autoplay muted loop id="background_video">
-                <source src="images/background.mp4" type="video/mp4">
+                <source src="images/b.mp4" type="video/mp4">
             </video>
 
             <video autoplay muted loop id="mobile_background_video">
@@ -141,7 +141,7 @@ session_start();
 
                 <div class="product">
 
-                    <img src="images/basketball.jpg" class="dp">
+                    <img src="images/basketb.jpg" class="dp">
 
                     <h4>Spalding TF-1000</h4>
                     <p>
@@ -175,54 +175,12 @@ session_start();
         </div>
 
 
-        <div class="footer">
-            <div class="row">
-                <div class="col">
-                    <img src="images/logo.png" alt="logo" class="foot_logo">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa necessitatibus sint
-                        eligendi perspiciatis repudiandae est ullam officia officiis hic id fugit, reiciendis cumque
-                        rem, iusto mollitia sequi excepturi natus.
-                    </p>
-                </div>
+        <?php 
 
-                <div class="col">
-                    <h3>Office <div class="underline"><span></span></div>
-                    </h3>
-                    <p>Purnachandi Road</p>
-                    <p>Jawalakhel, Lalitpur</p>
-                    <p>Bagmati province, Nepal</p>
-                    <p class="email_id">vedascollege@gmail.com</p>
-                    <h4>0123456789</h4>
-                </div>
-                <div class="col">
-                    <h3>Links<div class="underline"><span></span></h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>feedback<div class="underline"><span></span></h3>
-                    <form>
-                        <i class="fa-regular fa-message"></i>
-                        <input type="text" placeholder="What should we change!!!" required>
-                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                    </form>
+            $IPATH = $_SERVER["DOCUMENT_ROOT"]."/project/php/";
+            include($IPATH."footer.html");
 
-                    <div class="social_icons">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Developed by <b>Dinesh Bajgain </b>& <b>Sadishan Khadka</b>.</p>
-        </div>
+        ?>
 
     </div>
 

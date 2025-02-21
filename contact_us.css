@@ -10,7 +10,6 @@ body {
     background-color: black;
 }
 
-
 .header {
     padding: 1rem 0;
     background: url(images/d.jpg);
@@ -21,7 +20,6 @@ body {
 .head {
     display: flex;
 }
-
 
 .top {
     display: flex;
@@ -37,19 +35,19 @@ body {
 .logo img {
     height: 70px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropbtn {
-    background: linear-gradient(to left, rgba(171, 159, 147, 0.496), rgb(9, 9, 9));
+    background: linear-gradient(to left, gray, black);
     border-radius: 30px;
     border: none;
     padding: 0.8rem 3rem;
     text-transform: capitalize;
-    color: snow;
-    word-spacing: 0.2rem;
+    color: white;
     margin-bottom: 5px;
     margin-right: 3rem;
     cursor: pointer;
@@ -72,7 +70,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5e5d5d;
+    background-color: #4d4d4d;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 120px;
@@ -81,26 +79,22 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #6e6e6e;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 
 .nav {
     text-transform: uppercase;
@@ -114,32 +108,27 @@ body {
     opacity: 70%;
 }
 
-
 .nav ul {
     display: flex;
     list-style: none;
 }
-
 
 .nav ul li {
     cursor: pointer;
     padding: .5rem 2.5rem;
     font-weight: 900;
     text-align: center;
-    color: snow;
+    color: white;
 }
 
 .nav ul a {
     text-decoration: none;
 }
 
-
 .nav ul li:hover {
     border-radius: 60px;
-    background: linear-gradient(to left, black, rgb(246, 32, 8), black);
+    background: linear-gradient(to left, black, gray, black);
 }
-
-
 
 .content h3 {
     font-size: 32px;
@@ -149,23 +138,35 @@ body {
     font-weight: 900;
     text-decoration: underline;
     text-underline-offset: 2px;
-    color: snow;
+    color: white;
 }
-
 
 .content p {
     font-size: 16px;
-    color: snow;
+    color: white;
     text-align: center;
     padding-bottom: 10px;
 }
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+/* 
 .form {
     width: 30%;
     margin: 20px auto 30px;
     border-radius: 30px;
-    background-color: rgb(88, 88, 88);
-    box-shadow: 0 0 8vh 0 rgba(139, 16, 2, 1);
+    background-color: #4d4d4d;
+    box-shadow: 0 0 8vh 0 rgba(0, 0, 0, 0.8);
     padding: 2rem;
     opacity: 0.8;
 }
@@ -175,7 +176,7 @@ body {
     padding: 20px 0 5px 20px;
     font-size: 15px;
     font-weight: 900;
-    color: snow;
+    color: white;
 }
 
 .form input {
@@ -183,29 +184,105 @@ body {
     height: 25px;
     width: 100%;
     background: none;
-    /* color: rgb(246, 32, 8); */
     border-radius: 50px;
     margin-top: 1vh;
     padding: 2vh;
-    font-size: 10px;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
     font-size: 15px;
+    color: white;
+} */
+
+/* Modernized Form */
+/* Beautiful Modern Form */
+.form {
+    width: 40%;
+    margin: 50px auto;
+    background: transparent;
+    border: 2px solid rgba(231, 165, 186, 0.6);
+    padding: 2.5rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgb(233, 12, 126);
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-::placeholder {
-    color: snow;
+.form label {
+    display: block;
+    font-size: 18px;
+    color: #e0e0e0;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
+.form input {
+    width: 100%;
+    padding: 15px;
+    background-color: #252424;
+    border: 2px solid #444;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form input::placeholder {
+    color: #bbb;
+}
+
+.form input:focus {
+    border-color: #4e4347;
+    background-color: #333;
+    box-shadow: 0 0 8px rgba(224, 199, 207, 0.6);
+}
+
+.form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #4a4849, #b994a0);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.form button:hover {
+    background: linear-gradient(to left, #4a4849, #b994a0);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(244, 234, 237, 0.3);
+}
 
 .form .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Adding subtle animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.form {
+    animation: fadeIn 1s ease-out;
+}
+
+/* .form .btn a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,205 +296,41 @@ input::-webkit-inner-spin-button {
     border-radius: 30px;
     height: 30px;
     margin-top: 3rem;
-    color: snow;
+    color: white;
     text-transform: capitalize;
 }
 
-.form input:hover {
-    border: 1px solid rgb(246, 32, 8);
-}
-
+.form input:hover,
 .form input:focus {
-    border: 1px solid rgb(246, 32, 8);
+    border: 1px solid gray;
     outline: none;
 }
 
-.form button:hover {
-    border: 1px solid rgb(246, 32, 8);
-    font-size: 16px;
-    font-weight: 900;
-    color: rgb(246, 32, 8);
-}
-
+.form button:hover,
 .form button:focus {
-    border: 1px solid rgb(246, 32, 8);
-    outline: none;
-    color: rgb(246, 32, 8);
+    border: 1px solid gray;
     font-size: 16px;
     font-weight: 900;
-}
-
-
-.footer {
-    background: linear-gradient(to left, black, rgb(246, 93, 76), black);
-    width: 100%;
-    /* bottom: 0; */
-    color: aliceblue;
-    border-top-left-radius: 40px;
-    font-size: 13px;
-    line-height: 20px;
-    padding: 100px 0 30px;
-}
-
-.row {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.col {
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.col:nth-child(2),
-.col:nth-child(2),
-.col:nth-child(3) {
-    flex-basis: 15%;
-}
-
-.foot_logo {
-    width: 200px;
-    margin-bottom: 30px;
-}
-
-.col h3 {
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.email_id {
-    width: fit-content;
-    border-bottom: 1px solid snow;
-    margin: 20px 0;
-}
-
-.col ul li {
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-.col ul li a {
-    text-decoration: none;
-    color: snow;
-}
-
-.col form {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid snow;
-    margin-bottom: 50px;
-}
-
-.col form .fa-regular {
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.col form input {
-    width: 100%;
-    background: transparent;
-    color: snow;
-    border: 0;
-    outline: none;
-}
-
-.col form button {
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-.col form .fa-solid {
-    font-size: 16px;
-    color: snow;
-}
-
-.social_icons .fa-brands {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: black;
-    background: snow;
-    margin-right: 15px;
-}
-
-.footer hr {
-    width: 98%;
-    border-bottom: 1 px solid snow;
-    margin: 20px auto;
-}
-
-.copyright {
-    text-align: center;
-}
-
-.underline {
-    width: 100%;
-    height: 5px;
-    background: gray;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    overflow: hidden;
-}
-
-.underline span {
-    width: 15px;
-    height: 100%;
-    background: snow;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
+    color: gray;
+} */
 
 @keyframes moving {
     0% {
         left: -20px;
     }
-
     100% {
         left: 100%;
     }
 }
 
 @media (max-width: 800px) {
-
     .col {
-        flex-basis: 100%;
-    }
-
-    .col:nth-child(2),
-    .col:nth-child(2),
-    .col:nth-child(3) {
         flex-basis: 100%;
     }
 
     .footer {
         bottom: 0;
     }
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #292929;
-    min-width: 120px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 .burger-menu {
@@ -435,42 +348,32 @@ input::-webkit-inner-spin-button {
     transition: 0.4s;
 }
 
-
-
 @media (max-width: 768px) {
-    /* Display the burger menu */
     .burger-menu {
         display: block;
-        color: #f1f1f1;
+        color: white;
     }
 
-    /* Hide the regular nav menu */
     .nav {
         display: none;
         left: 8rem;
         top: 6rem;
-        background-color: rgb(32, 31, 31);
-        color: wheat;
+        background-color: #292929;
+        color: white;
         width: 30vh;
         opacity: 1;
         border-radius: 20px;
     }
 
-    .nav ul{
+    .nav ul {
         flex-direction: column;
     }
 
-    .nav ul li{
+    .nav ul li {
         padding: 20px auto;
     }
 
-    .nav hr{
-        width: 90%;
-        border-bottom: 1px solid rgb(5, 5, 5);
-        margin: auto;
-    }
-
-    .header{
+    .header {
         background-image: url(images/j.jpg);
     }
 
@@ -483,26 +386,19 @@ input::-webkit-inner-spin-button {
         margin: 10px 0 0 20px;
     }
 
-    .dropdown{
-        position: absolute;
-        right: -2rem;
-        top: 1rem;
-    }
-
-    .content h3{
+    .content h3 {
         font-size: 20px;
-        color: rgb(55, 55, 45);
+        color: white;
     }
 
-    .content p{
+    .content p {
         font-size: 10px;
-        color: rgb(55, 55, 45);
+        color: white;
     }
 
-    .form{
+    .form {
         width: 90%;
         height: 80%;
         margin: auto;
     }
-
 }

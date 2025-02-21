@@ -25,7 +25,7 @@
             <source src="images/e.mp4" type="video/mp4">
         </video>
 
-        <div class="header">
+        <!-- <div class="header">
 
 
             <div class="head">
@@ -112,7 +112,13 @@
             </div>
 
 
-        </div>
+        </div> -->
+        <?php 
+
+            $IPATH = $_SERVER["DOCUMENT_ROOT"]."/project/php/";
+            include($IPATH."headernav.html");
+
+        ?>
 
         <div class="teams">
 
@@ -146,31 +152,7 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="front-face">
-                            <img src="images/sadishan.jpg">
-                        </div>
-                        <div class="back-face">
-                            <h2>Mr.Sadishan Khadka</h2>
-                            <p>I'm Software Developer.</p>
-                            <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque quis
-                                optio voluptatum
-                                reiciendis ex libero adipisci, expedita deserunt culpa consectetur deleniti esse
-                                excepturi corrupti ipsam tempora doloribus autem ipsa hic earum. Similique tempora
-                                molestias officia reprehenderit sequi quod, quisquam ipsum recusandae magni, impedit
-                                laudantium, facere aperiam aut consequatur architecto?
-                            </p>
-                            <div class="social-media">
-                                <a href="https://www.facebook.com/mr.bajgain"> <i
-                                        class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                            </div>
-                            <div class="button"><a href="#">Resume</a></div>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
 
@@ -236,62 +218,12 @@
 
         </div>
 
+        <?php 
 
-        <div class="footer">
-            <div class="row">
+            $IPATH = $_SERVER["DOCUMENT_ROOT"]."/project/php/";
+            include($IPATH."footer.html");
 
-                <div class="col">
-                    <img src="images/logo.png" alt="logo" class="foot_logo">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsa necessitatibus sint
-                        eligendi perspiciatis repudiandae est ullam officia officiis hic id fugit, reiciendis cumque
-                        rem, iusto mollitia sequi excepturi natus.
-                    </p>
-                </div>
-
-                <div class="col">
-                    <h3>Office <div class="underline"><span></span></div>
-                    </h3>
-                    <p>Purnachandi Road</p>
-                    <p>Jawalakhel, Lalitpur</p>
-                    <p>Bagmati province, Nepal</p>
-                    <p class="email_id">vedascollege@gmail.com</p>
-                    <h4>0123456789</h4>
-                </div>
-
-                <div class="col">
-                    <h3>Links<div class="underline"><span></span></h3>
-                    <ul>
-                        <li onclick="location.href='home.php';">home</li>
-                        <li onclick="location.href='products.php';">product</li>
-                        <li onclick="location.href='about_us.php';">about us</li>
-                        <li onclick="location.href='contact_us.php';">contact us</li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3>feedback<div class="underline"><span></span></h3>
-                    <form>
-                        <i class="fa-regular fa-message"></i>
-                        <input type="text" placeholder="What should we change!!!" required>
-                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                    </form>
-
-                    <div class="social_icons">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <p class="copyright">Developed by <b>Dinesh Bajgain </b>& <b>Sadishan Khadka</b>.</p>
-
-        </div>
+        ?>
 
     </div>
 

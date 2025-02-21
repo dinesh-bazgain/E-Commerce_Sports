@@ -102,7 +102,7 @@ session_start();
 
     </div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="row">
             <div class="col">
                 <img src="images/logo.png" alt="logo" class="foot_logo">
@@ -148,8 +148,16 @@ session_start();
             </div>
         </div>
         <hr>
-        <p class="copyright">Developed by <b>Dinesh Bajgain </b>& <b>Sadishan Khadka</b>.</p>
-    </div>
+        <p class="copyright">Developed by <b>Dinesh Bajgain </b>.</p>
+    </div> -->
+
+    
+    <?php 
+
+        $IPATH = $_SERVER["DOCUMENT_ROOT"]."/project/php/";
+        include($IPATH."footer.html");
+
+    ?>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

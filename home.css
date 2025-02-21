@@ -1,4 +1,5 @@
-*{ margin: 0;
+*{ 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
@@ -42,7 +43,7 @@ body{
 }
 
 .dropbtn {
-    background: linear-gradient(to left, rgb(109, 110, 111), rgba(171, 159, 147, 0.496));
+    background: linear-gradient(to left, #555555, #333333);
     border-radius: 30px;
     border: none;
     padding: 0.8rem 3rem;
@@ -66,12 +67,13 @@ body{
 
 .dropbtn:hover {
     transform: scale(1.1);
+    background: #444444;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5e5d5d;
+    background-color: #2c2c2c;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 120px;
@@ -86,14 +88,14 @@ body{
 }
 
 .dropdown-content a {
-    color: black;
+    color: #f8f8f8;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #444444;
 }
 
 .dropdown:hover .dropdown-content {
@@ -125,7 +127,6 @@ body{
 
 .nav{
     text-transform: uppercase;
-    background-color: rgba(243, 243, 240, 0.5);
     border-radius: 50px;
     position: absolute;
     left: 40%;
@@ -149,17 +150,18 @@ body{
     padding: .5rem 2.5rem;
     font-weight: 900;
     text-align: center;
+    color: #f8f8f8; 
 }
 
 .nav ul a{
     text-decoration: none;
-    color: black;
+    color: rgb(240, 237, 237);
 }
 
 
 .nav ul li:hover{
     border-radius: 60px;
-    background: linear-gradient(to left, rgba(243, 243, 240, 0.5),rgb(21, 84, 25), rgba(243, 243, 240, 0.5));
+    background: linear-gradient(to left, #555555, #333333, #555555);
 }
 
 
@@ -200,12 +202,12 @@ body{
 
 .product_page{
     /* height: 100vh; */
-    background-color: rgb(238, 240, 234);
+    background-color: rgb(14, 14, 14);
 }
 
 .product_page h3{
     padding: 3rem 0 2rem 0;
-    color: rgb(6, 6, 6);
+    color: snow;
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
@@ -221,9 +223,10 @@ body{
 }
 
 .product{
-    border: 1px solid rgba(73, 73, 73, 0.2);
+    border: 1px solid snow;
     border-radius: 30px;
     padding: 20px;
+    background-color: #858383;
 }
 
 .product .dp{
@@ -232,12 +235,11 @@ body{
     border-radius: 50%;
 }
 .product .dp{
-    background-color: rgb(21, 84, 25);
     padding: 3px;
     margin: 10px;
 }
 .product h4{
-    color: rgb(9, 9, 9);
+    color: rgb(12, 12, 12);
     padding: 20px;
 }
 
@@ -259,7 +261,7 @@ body{
 }
 
 .product_page_link a{
-    color: rgb(4, 4, 4);
+    color: snow;
     text-decoration: none;
 }
 
@@ -272,154 +274,6 @@ body{
     transition: 1s;
 }
 
-
-
-
-.footer{
-    background: linear-gradient(to right,rgb(21, 84, 25), snow);
-    width: 100%;
-    position: absolute;
-    /* bottom: 0; */
-    color: black;
-    border-top-left-radius: 40px;
-    font-size: 13px;
-    line-height: 20px;
-    padding: 100px 0 30px;
-}
-
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.col{
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.col:nth-child(2),
-.col:nth-child(2),
-.col:nth-child(3){
-    flex-basis: 15%;
-}
-
-.foot_logo{
-    width: 200px;
-    margin-bottom: 30px;
-}
-
-.col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.email_id{
-    width: fit-content;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    margin: 20px 0;
-}
-
-.col ul li{
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-.col ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.col form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    margin-bottom: 50px;
-}
-
-.col form .fa-regular{
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.col form input{
-    width: 100%;
-    background: transparent;
-    color: rgb(0, 0, 0);
-    border: 0;
-    outline: none;
-}
-
-.col form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-.col form .fa-solid{
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-}
-
-.social_icons .fa-brands{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: snow;
-    background: rgb(0, 0, 0);
-    margin-right: 15px;
-}
-
-.footer hr{
-    width: 98%;
-    border-bottom: 1px solid rgb(5, 5, 5);
-    margin: 20px auto;
-}
-
-.copyright{
-    text-align: center;
-}
-
-.underline{
-    width: 100%;
-    height: 5px;
-    background: gray;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    overflow: hidden;
-}
-
-.underline span{
- width: 15px;
- height: 100%;
- background: rgb(0, 0, 0);
- border-radius: 3px;
- position: absolute;
- top: 0;
- left: 10px;
- animation: moving 2s linear infinite;   
-}
-
-@keyframes moving{
-    0%{
-        left: -20px;
-    }
-    100%{
-        left: 100%;
-    }
-}
 
 @media (max-width: 800px){
     .footer{
