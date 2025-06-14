@@ -472,4 +472,4 @@ composer.lock
 *.sass.map
 *.scss.map
 
-images
+images/
