@@ -7,15 +7,21 @@ This is a complete prototype for the sports store e-commerce website built with 
 # Demo Images
 
 <p align="center">
-  <img src="demo/1.png" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/2.png" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/3.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/4.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/8.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/6.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <img src="demo/7.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-  <br/>
-  <img src="demo/5.jpeg" width="400"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <img src="demo/1.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/2.png"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/3.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/4.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/8.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/6.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/>
+  <img src="demo/7.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <br/><br/><br/><br/>
+  <img src="demo/5.jpeg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 </p>
 
 ---
